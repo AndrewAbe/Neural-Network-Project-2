@@ -15,11 +15,11 @@ test_labels = data['test_labels']
 
 # Convert to PyTorch tensors and ensure labels are long type
 train_images = torch.from_numpy(train_images).float()
-train_labels = torch.from_numpy(train_labels).long()  # Ensuring labels are of type long
+train_labels = torch.from_numpy(train_labels).long()
 validate_images = torch.from_numpy(validate_images).float()
-validate_labels = torch.from_numpy(validate_labels).long()  # Ensuring labels are of type long
+validate_labels = torch.from_numpy(validate_labels).long()
 test_images = torch.from_numpy(test_images).float()
-test_labels = torch.from_numpy(test_labels).long()  # Ensuring labels are of type long
+test_labels = torch.from_numpy(test_labels).long()
 
 # Create TensorDataset objects
 train_dataset = TensorDataset(train_images, train_labels)
